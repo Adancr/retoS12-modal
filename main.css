@@ -1,0 +1,68 @@
+html {
+  font-size: 65.2%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.contenedor {
+  background-image: url(./bg-sem.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+}
+
+.contenedor h1 {
+  font-size: 4rem;
+}
+.contenedor h3 {
+  font-size: 2.8rem;
+  margin-bottom: 0;
+}
+
+
+.info-sem {
+  max-width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  visibility: hidden;
+
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.popup {
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 4px 4px;
+}
+
+.popup .btn-close {
+  text-align: right;
+  display: block;
+  font-size: 1.2rem;
+}
